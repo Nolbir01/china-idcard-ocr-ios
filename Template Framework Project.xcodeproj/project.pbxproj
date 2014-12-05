@@ -16,7 +16,6 @@
 		6400DDE9180C5DE000443362 /* G8AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6400DDE8180C5DE000443362 /* G8AppDelegate.m */; };
 		6400DDEF180C5DE000443362 /* G8ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6400DDEE180C5DE000443362 /* G8ViewController.mm */; };
 		6400DDF1180C5DE000443362 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6400DDF0180C5DE000443362 /* Images.xcassets */; };
-		6420626F1846105200EE2AD4 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6420626E1846105200EE2AD4 /* TesseractOCR.framework */; };
 		64907490198A5CD500D728CC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6490748F198A5CD500D728CC /* CoreImage.framework */; };
 		64DDA74E188FD7D10025590D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6400DDEA180C5DE000443362 /* Main.storyboard */; };
 		64DDA75B188FD9140025590D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 64DDA75A188FD9140025590D /* tessdata */; };
@@ -25,6 +24,7 @@
 		77928C351A2F24B6008851C0 /* 808_370231808_IMG_0885.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 77928C341A2F24B6008851C0 /* 808_370231808_IMG_0885.JPG */; };
 		77928C381A2F3E9E008851C0 /* bin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77928C361A2F3E9E008851C0 /* bin.jpg */; };
 		77928C391A2F3E9E008851C0 /* ID.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77928C371A2F3E9E008851C0 /* ID.jpg */; };
+		77B1A53A1A317A3C0023E866 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B1A5391A317A3C0023E866 /* TesseractOCR.framework */; };
 		77D3DF651A2F6FA700877844 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D3DF641A2F6FA700877844 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		6400DDEE180C5DE000443362 /* G8ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = G8ViewController.mm; sourceTree = "<group>"; };
 		6400DDF0180C5DE000443362 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6400DDF7180C5DE000443362 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6420626E1846105200EE2AD4 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = ../Products/TesseractOCR.framework; sourceTree = "<group>"; };
 		6490748F198A5CD500D728CC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		64DDA75A188FD9140025590D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		64E40AB0180C6D4D00C36DDE /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
@@ -54,6 +53,7 @@
 		77928C341A2F24B6008851C0 /* 808_370231808_IMG_0885.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 808_370231808_IMG_0885.JPG; sourceTree = "<group>"; };
 		77928C361A2F3E9E008851C0 /* bin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bin.jpg; sourceTree = "<group>"; };
 		77928C371A2F3E9E008851C0 /* ID.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ID.jpg; sourceTree = "<group>"; };
+		77B1A5391A317A3C0023E866 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = "Template Framework Project/TesseractOCR.framework"; sourceTree = "<group>"; };
 		77D3DF641A2F6FA700877844 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "Template Framework Project/opencv2.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +64,7 @@
 			files = (
 				64907490198A5CD500D728CC /* CoreImage.framework in Frameworks */,
 				77D3DF651A2F6FA700877844 /* opencv2.framework in Frameworks */,
-				6420626F1846105200EE2AD4 /* TesseractOCR.framework in Frameworks */,
+				77B1A53A1A317A3C0023E866 /* TesseractOCR.framework in Frameworks */,
 				64E40AB1180C6D4D00C36DDE /* libstdc++.6.0.9.dylib in Frameworks */,
 				6400DDDB180C5DE000443362 /* CoreGraphics.framework in Frameworks */,
 				6400DDDD180C5DE000443362 /* UIKit.framework in Frameworks */,
@@ -95,10 +95,10 @@
 		6400DDD7180C5DE000443362 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77B1A5391A317A3C0023E866 /* TesseractOCR.framework */,
 				77D3DF641A2F6FA700877844 /* opencv2.framework */,
 				6490748F198A5CD500D728CC /* CoreImage.framework */,
 				64E40AB0180C6D4D00C36DDE /* libstdc++.6.0.9.dylib */,
-				6420626E1846105200EE2AD4 /* TesseractOCR.framework */,
 				6400DDD8180C5DE000443362 /* Foundation.framework */,
 				6400DDDA180C5DE000443362 /* CoreGraphics.framework */,
 				6400DDDC180C5DE000443362 /* UIKit.framework */,
@@ -166,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = G8;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Daniele Galiotto - www.g8production.com";
 			};
 			buildConfigurationList = 6400DDD0180C5DE000443362 /* Build configuration list for PBXProject "Template Framework Project" */;
@@ -272,7 +272,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-lstdc++";
 				SDKROOT = iphoneos;
@@ -330,6 +330,9 @@
 					"$(PROJECT_DIR)/Template",
 					Framework,
 					Project,
+					"$(PROJECT_DIR)/Template",
+					Framework,
+					Project,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Template Framework Project/Template Framework Project-Prefix.pch";
@@ -350,6 +353,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/../Products",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Template",
+					Framework,
+					Project,
 					"$(PROJECT_DIR)/Template",
 					Framework,
 					Project,
